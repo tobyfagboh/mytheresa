@@ -1,18 +1,22 @@
 {
-  "name": "mytheresa_assessment",
+  "name": "mytheresa-assesement",
   "version": "1.0.0",
-  "description": "The Automated Solution of MyTheresa application",
+  "description": "Automation Test Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:runner": "cypress open",
+    "cypress:execution": "cypress run"
   },
-  "author": "Oluwatobi Fagbohungbe",
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Fagbohungbe Oluwatobi",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.3.1",
-    "cypress-cucumber-preprocessor": "^4.3.1"
-  },
-    "cypress-cucumber-preprocessor": {
-      "nonGlobalStepDefinitions": true
-    }
+    "@badeball/cypress-cucumber-preprocessor": "^11.4.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "cypress": "^10.3.0",
+    "esbuild": "^0.14.48",
+    "multiple-cucumber-html-reporter": "^1.21.4"
+  }
 }

@@ -1,26 +1,30 @@
-# mytheresa
+# cypress-cucumber-e2e-testing
 
-# Automated Scripts for Mytheresa 
+> Cypress 10+ with Cucumber boilerplate project.
 
-## Tools and Framework used
-* Framework: [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements)
-* Supporting Language: Javascript
-* Supporting Libraries:
-    * [Node.js (12 or Higher)](https://nodejs.org/en/)
-    * [Cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
+### 💻 Topics
 
-## Local Setup
-* After cloning this repo to the local machine, `npm install` to install from the `package.json` file.
+Integrated with:
 
-## Running tests locally
-* Use ```npx cypress open``` or `node_modules/.bin/cypress open` to open the test runner and execute a visual regression
-  locally.
-* Use `npx cypress run` or `node_modules/.bin/cypress run` to run the test in headless mode
-* Use `npx cypress run -b <browser_type> --headless` to run in headless mode with a specific browser
+- [x] https://github.com/badeball/cypress-cucumber-preprocessor
+- [x] https://github.com/bahmutov/cypress-esbuild-preprocessor
+- [x] https://www.npmjs.com/package/multiple-cucumber-html-reporter
 
-## Supported Browsers
-The following are the supported browsers as of this version; 7.6.0
-* Chrome
-* Edge
-* Electron (default)
-* Firefox
+(+ bundlers: https://github.com/badeball/cypress-cucumber-preprocessor/tree/master/examples)
+
+- ## 💻 Steps to Execute
+
+Before you use this project you only need to have Node Js installed in your computer.
+
+https://nodejs.org/es/download/
+
+Also, download and install the JSON fomatter depending on your OS
+
+https://github.com/cucumber/json-formatter
+
+## 🚀 Install the project
+
+Install project dependencies with: npm i
+
+## 🚀 Run the test: 
+Open the terminal and run: npm run cypress:execution

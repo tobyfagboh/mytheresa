@@ -12,8 +12,8 @@ jobs:
 
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: npm run --config cypress.config.js
         uses: cypress-io/github-action@v4
         with:
-          # Specify Browser since container image is compile with Firefox
-          browser: firefox
+          # Specify Browser 
+          browser: chrome

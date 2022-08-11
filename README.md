@@ -28,3 +28,10 @@ Install project dependencies with: npm i
 
 ## 🚀 Run the test: 
 Open the terminal and run: npm run cypress:execution
+
+## 🚀 Run the test based on a particular environment 
+Open the terminal and run: npm cypress open --config configfile_name e.g:
+            npm cypress open --config cypress.config.js
+            npm cypress open --config local.config.js
+            npm cypress open --config staging.config.js
+            npm cypress open --config test.config.js

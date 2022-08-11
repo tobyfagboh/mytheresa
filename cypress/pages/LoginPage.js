@@ -15,6 +15,10 @@ class homeMytheresaPage {
     this.elements.passwordInput().type(password);
   }
 
+  typeWrongPassword(wrongPassword) {
+    this.elements.passwordInput().type(wrongPassword);
+  }
+
   clickMyaccount() {
     this.elements.myaccountBtn().click();
   }

@@ -4,7 +4,8 @@ class homeMytheresaPage {
     usernameInput: () => cy.get('#qa-login-email > #email'),
     passwordInput: () => cy.get('#qa-login-password > #pass'),
     loginBtn: () => cy.get('#qa-login-button > #send2'),
-    errorMessage: () => cy.get('.error-msg > ul > li > span')
+    errorMessage: () => cy.get('.error-msg > ul > li > span'),
+    myAccountTitle: () => cy.get('#account-navigation > .block-title')
   };
 
   typeUsername(username) {

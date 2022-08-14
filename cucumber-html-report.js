@@ -5,11 +5,11 @@ report.generate({
   metadata: {
     browser: {
       name: "chrome",
-      version: "XX",
+      version: "104.0.5112.79",
     },
-    device: "Local machine",
+    device: "Local test machine",
     platform: {
-      name: "Mac",
+      name: "Mac OS",
       version: "12.3.1",
     },
   },

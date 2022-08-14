@@ -54,7 +54,7 @@ class createAcctPage {
     }
 
     verifyMyAccountPage() {
-        this.elements.myAccountPage().should("have.text", "My Account");;
+        this.elements.myAccountPage().should('be.visible');
     }
 
 }

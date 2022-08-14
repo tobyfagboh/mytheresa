@@ -1,12 +1,13 @@
 const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
-const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
+const addCucumberPreprocessorPlugin =
+  require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
+const createEsbuildPlugin =
+  require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 
 module.exports = defineConfig({
   e2e: {
     async setupNodeEvents(on, config) {
-
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
       });
@@ -15,13 +16,12 @@ module.exports = defineConfig({
       await addCucumberPreprocessorPlugin(on, config);
 
       return config;
-
     },
-
     specPattern: "cypress/e2e/features/*.feature",
     baseUrl: "https://www.mytheresa.com/en-de/men.html",
     chromeWebSecurity: false,
-    watchForFileChanges: false
+    watchForFileChanges: false,
+    // defaultCommandTimeout: 30000,
+    // pageLoadTimeout:60000,
   },
-
 });
